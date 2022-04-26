@@ -7,22 +7,22 @@
 #define EXTRA_INFO_GROUP    2
 
 
+void f0(int i){
+}
+
+
 int main(){
-  debug_print_options o = (struct debug_print_options){ .colorscheme = FORE_BLUE };
-  char                *s0 = "abc123"; char *s1 = "abc456";
-  char                *s2      = "ok";
-  char                *s100000 = "ok";
-  //pad_string("ok");
-  int                 i0 = 666;
+  char *s0 = "abc123", *s1 = "abc456", *s2 = "ok", *s100000 = "ok";
+  int  i0 = 666;
 
   DP("yo", .colorscheme = FORE_RED);
   DP(i0, .colorscheme   = FORE_BLUE);
+  DP(s1, .colorscheme   = FORE_GREEN);
+  DP(s1, .colorscheme   = FORE_WHITE);
   DP(s2);
+  DP(s2, .filestream = stderr);
   DP(s100000);
 
   DP(0 + 22);
-  DP(o);
-  //DEBUG_PRINT(s0, .group                                         = EXTRA_INFO_GROUP, .filestream=stdout);
-//  DEBUG_PRINT(s1, .colorscheme                                   = FORE_GREEN, .group = RED_GROUP);
   return(0);
 }

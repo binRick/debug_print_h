@@ -344,14 +344,11 @@ void debug_print_printf_specifier(const char *expr, void *data,
            "%s" AC_RESETALL
            "[" AC_RESETALL
            AC_REVERSED "%%s" AC_RESETALL
+           AC_REVERSED AC_FAINT ":%%d" AC_RESETALL
            "]" AC_RESETALL
            " " AC_RESETALL
-           AC_FAINT "| %s" AC_RESETALL
-           "Line:" AC_RESETALL
-           AC_REVERSED AC_FAINT "%%d" AC_RESETALL
-           " " AC_RESETALL
-           "|" AC_RESETALL
-           " " AC_RESETALL
+           AC_FAINT ": %s" AC_RESETALL
+           "" AC_RESETALL
            STYLE_BRIGHT "%sFunction:" AC_RESETALL
            " " AC_RESETALL
            "%%s" AC_RESETALL
