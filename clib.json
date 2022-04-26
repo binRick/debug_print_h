@@ -1,0 +1,17 @@
+{
+    "name": "osx",
+    "version": "x",
+    "repo": "binRick/c_darwin_mouse_location",
+    "description": "C Darwin Mouse Location",
+    "keywords": [
+        "c",
+        "darwin"
+    ],
+    "license": "MIT",
+    "makefile": "Makefile",
+    "install": "make install",
+    "files": [],
+    "dependencies": {
+        "clibs/module": "0.1.1"
+    }
+}
